@@ -77,6 +77,7 @@
 (global-set-key "\C-xl"             'indent-region)
 (global-set-key "\C-cl"             'org-store-link)
 (global-set-key "\C-ca"             'org-agenda)
+(global-set-key "\C-o"              'insert-and-indent-line-above)
 ;;(global-set-key "\C-\S-tab"        'previous-buffer)
 ;;(global-set-key "\C-<tab>"         'next-buffer)
 ;;(global-set-key "\C-c\C-k"         'kill-region)

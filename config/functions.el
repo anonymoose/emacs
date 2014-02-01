@@ -133,3 +133,15 @@
 
 (fset 'kb-indent
    (lambda (&optional arg) "Keyboard macro." (interactive "p") (kmacro-exec-ring-item (quote ([1 tab 14 1] 0 "%d")) arg)))
+
+
+(defun insert-and-indent-line-above ()
+  (interactive)
+  (push-mark)
+  (let*
+    ((ipt (progn (back-to-indentation) (point)))
+     (bol (progn (move-beginning-of-line 1) (point)))
+     (indent (buffer-substring bol ipt)))
+    (newline)
+    (previous-line)
+    (insert indent)))
