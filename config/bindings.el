@@ -83,6 +83,15 @@
 ;;(global-set-key "\C-<delete>"       'c-hungry-delete-forward)
 ;;(global-set-key "\C-<backspace>"    'c-hungry-delete-backwards)
 
+
+(global-set-key (kbd "C-c C-S-c") 'mc/edit-lines)
+(global-set-key (kbd "C->") 'mc/mark-next-like-this)
+;(global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
+;(global-set-key (kbd "C-c C->") 'mc/mark-all-like-this)
+;(global-set-key (kbd "C-S-<mouse-1>") 'mc/add-cursor-on-click)
+
+
+
 ; eliminate cruft on the screen every time we switch buffers (often).
 
 ;; (global-set-key "\C-xb"
