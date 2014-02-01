@@ -11,6 +11,9 @@ Tell emacs-live about it by installing a file called ~/.emacs-live.el
 containing the contents:
     (live-append-packs '(~/.live-packs/ken-pack))
 
+
+------------------------------------------------------------------------------------
+
 ## User Pack Template
 o
 This is a template for your own user (or other purpose) pack.
