@@ -70,6 +70,7 @@
 (global-set-key [f6]                'insert-comment)
 (global-set-key [f7]                'insert-stamp)
 (global-set-key [f8]                'insert-todo)
+;(global-set-key "\C-F"              'find-file)
 (global-set-key "\C-w"              'fixup-whitespace)
 (global-set-key "\C-y"              'kill-region)
 (global-set-key "\C-v"              'yank)
@@ -160,3 +161,5 @@
 
 
 (add-to-list 'auto-mode-alist '("\\.tpl\\'" . sgml-mode))
+
+(add-to-list 'auto-mode-alist '("\\.pp\\'" . ruby-mode))
