@@ -5,5 +5,6 @@
 
 ;; Load bindings config
 
-(live-load-config-file "bindings.el")
+(live-load-config-file "modes.el")
 (live-load-config-file "functions.el")
+(live-load-config-file "bindings.el")

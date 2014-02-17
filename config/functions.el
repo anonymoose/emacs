@@ -1,4 +1,14 @@
 ;; kill the dired buffers so the buffer list is uncluttered
+(defun cider-show-ex ()
+  (interactive)
+  (setq cider-repl-popup-stacktraces t)
+  )
+
+(defun cider-hide-ex ()
+  (interactive)
+  (setq cider-repl-popup-stacktraces nil)
+  )
+
 (defun kill-dired-buffer (b)
   (with-current-buffer b
 	(unless (null list-buffers-directory)
@@ -72,8 +82,14 @@
 (defun insert-pdb (arg)
   "Insert a pdb.set_trace() statement"
   (interactive "p")
-  (progn
-    (insert "import pdb; pdb.set_trace()")))
+  (if (equal mode-name "Clojure")
+      (progn
+        (insert "(println )")
+        )
+    (progn
+      (insert "import pdb; pdb.set_trace()")))
+  (indent-for-tab-command)
+  )
 
 (defun insert-html-var (arg)
   (interactive "p")
