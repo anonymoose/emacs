@@ -71,9 +71,9 @@
 (global-set-key [f7]                'insert-stamp)
 (global-set-key [f8]                'insert-todo)
 ;(global-set-key "\C-F"              'find-file)
-(global-set-key "\C-w"              'fixup-whitespace)
-(global-set-key "\C-y"              'kill-region)
-(global-set-key "\C-v"              'yank)
+;(global-set-key "\C-w"              'fixup-whitespace)
+;(global-set-key "\C-y"              'kill-region)
+;(global-set-key "\C-v"              'yank)
 (global-set-key "\C-x="             'balance-windows)
 (global-set-key "\C-xl"             'indent-region)
 (global-set-key "\C-cl"             'org-store-link)
@@ -87,7 +87,8 @@
 
 
 (global-set-key (kbd "C-c C-S-c") 'mc/edit-lines)
-(global-set-key (kbd "C-|") 'mc/mark-next-like-this)
+;(global-set-key (kbd "C-|") 'mc/mark-next-like-this)
+(global-set-key (kbd "C->") 'mc/mark-next-like-this)
 ;(global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
 ;(global-set-key (kbd "C-c C->") 'mc/mark-all-like-this)
 ;(global-set-key (kbd "C-S-<mouse-1>") 'mc/add-cursor-on-click)
@@ -174,3 +175,6 @@
 ;;(add-hook 'indent-buffer-after-hook
 ;;    (lambda ()
 ;;      (yafolding-temp-toggle t)))
+
+
+(setq cider-repl-popup-stacktraces t)

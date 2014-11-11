@@ -84,7 +84,8 @@
   (interactive "p")
   (if (equal mode-name "Clojure")
       (progn
-        (insert "(println )")
+        (insert "(println  )")
+        (backward-char 2)
         )
     (progn
       (insert "import pdb; pdb.set_trace()")))
