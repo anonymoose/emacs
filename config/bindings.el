@@ -49,6 +49,7 @@
 (global-set-key (kbd "M-t")         'make-frame-command)
 (global-set-key "\C-x\C-b"          'ibuffer)
 (global-set-key [C-tab]             'insert-4-spaces)
+(global-set-key (kbd "C-S-f")       'fixup-whitespace)
 ;;(global-set-key "\C-xp"             'insert-printr)
 (global-set-key "\C-xp"             'insert-pdb)
 (global-set-key "\C-xI"             'insert-html-var)
