@@ -55,6 +55,8 @@
 (global-set-key "\C-xI"             'insert-html-var)
 (global-set-key "\C-xJ"             'insert-html-func)
 (global-set-key "\C-xO"             'other-frame)
+(global-set-key "\C-z"              'other-frame)
+(global-set-key "\C-x\C-z"          'other-frame)
 ;;(global-set-key "\C-xe"             'insert-echo)
 (global-set-key [f1]                'redraw-display)
 (global-set-key [f2]                'rename-buffer)
