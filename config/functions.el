@@ -92,6 +92,15 @@
   (indent-for-tab-command)
   )
 
+(defun insert-jquery-val (arg)
+  "Insert $('#fud').val()"
+  (interactive "p")
+  (progn
+    (insert "$('#').val()")
+    (backward-char 8)
+    )
+    (indent-for-tab-command))
+
 (defun insert-html-var (arg)
   (interactive "p")
   (progn

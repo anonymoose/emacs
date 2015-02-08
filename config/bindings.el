@@ -68,7 +68,7 @@
 (global-set-key [f9]                'kindent)
 (global-set-key [f10]               'swap-windows)
 (global-set-key [f11]               'mac-toggle-max-window)
-
+(global-set-key "\C-xv"             'insert-jquery-val')
 (global-set-key [f5]                'insert-single-comment)
 (global-set-key [f6]                'insert-comment)
 (global-set-key [f7]                'insert-stamp)
