@@ -1,8 +1,10 @@
 ;; Place your bindings here.
 
-;; For example:
-;;(define-key global-map (kbd "C-+") 'text-scale-increase)
-;;(define-key global-map (kbd "C--") 'text-scale-decrease)
+
+
+(setenv "GOPATH" "/Users/kbedwell/dev/godev")
+(setenv "PATH" (concat (getenv "PATH") ":" "/Users/kbedwell/dev/godev/bin"))
+;(setq exec-path (append exec-path (list (expand-file-name "/another/thing"))))
 
 
 (setq make-backup-files nil); backups off (~file)
