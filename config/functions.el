@@ -104,8 +104,9 @@
 (defun insert-html-var (arg)
   (interactive "p")
   (progn
-    (insert "{{}}")
-    (backward-char 2)))
+    ;(insert "{{}}")
+    (insert "{%   %}")
+    (backward-char 4)))
 
 (defun insert-html-func (arg)
   (interactive "p")
