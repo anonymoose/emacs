@@ -113,8 +113,6 @@
     (insert "{%  %}")
     (backward-char 3)))
 
-
-
 (defun insert-echo (arg)
   (interactive "p")
   (insert "echo ;")
