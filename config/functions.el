@@ -87,8 +87,13 @@
         (insert "(println  )")
         (backward-char 2)
         )
-    (progn
-      (insert "import pdb; pdb.set_trace()")))
+    (if (equal mode-name "Python")
+        (progn
+          (insert "import pdb; pdb.set_trace()"))
+      (progn ; R pipe
+        (insert " %>% ")
+        )
+      ))
   (indent-for-tab-command)
   )
 

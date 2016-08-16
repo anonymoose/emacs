@@ -176,6 +176,7 @@
 
 (add-to-list 'auto-mode-alist '("\\.pp\\'" . ruby-mode))
 
+(add-to-list 'auto-mode-alist '("\\.Rmd\\'" . markdown-mode))
 
 (global-set-key (kbd "C-'") 'yafolding)
 ;;(define-key global-map (kbd "C-c C-f") 'yafolding-toggle-all)
