@@ -10,9 +10,9 @@
 (live-load-config-file "bindings.el")
 
 
-(add-to-list 'load-path "~/.live-packs/ken-pack/lib/company-mode")
-(load "company")
-(global-company-mode)
+;(add-to-list 'load-path "~/.live-packs/ken-pack/lib/company-mode")
+;(load "company")
+;(global-company-mode)
 
 
 ;(add-hook 'cider-repl-mode-hook #'company-mode)
