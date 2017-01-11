@@ -18,6 +18,9 @@
 ;(add-hook 'cider-repl-mode-hook #'company-mode)
 ;(add-hook 'cider-mode-hook #'company-mode)
 
+; https://github.com/pashky/restclient.el
+(live-add-pack-lib "restclient.el")
+(require 'restclient)
 
 (add-to-list 'load-path "~/.live-packs/ken-pack/lib/csv-mode")
 (load "csv-mode")
