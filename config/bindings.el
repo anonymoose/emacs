@@ -38,6 +38,8 @@
       mac-command-modifier 'meta
       mac-option-modifier 'none)
 
+(setq system-uses-terminfo nil)    ; http://stackoverflow.com/a/8920373
+(setq explicit-shell-file-name "/bin/zsh")
 
 ;; key remapping
 ;;(global-set-key "\C-xk"             'kill-this-buffer)
