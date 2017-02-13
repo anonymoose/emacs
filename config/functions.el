@@ -106,17 +106,27 @@
     )
     (indent-for-tab-command))
 
-(defun insert-html-var (arg)
+(defun insert-interpolate-var (arg)
   (interactive "p")
-  (progn
-    (insert "{{}}")
-    (backward-char 2)))
+  (cond ((equal mode-name "Shell-script")
+         (progn
+           (insert "${}")
+           (backward-char 1)))
+        (t (progn
+             (insert "{{}}")
+             (backward-char 2)))))
 
-(defun insert-html-func (arg)
+(defun insert-interpolate-func (arg)
   (interactive "p")
-  (progn
-    (insert "{%  %}")
-    (backward-char 3)))
+  (cond ((equal mode-name "Shell-script")
+         (progn
+           (insert "$(  )")
+           (backward-char 2)
+           )
+         )
+        (t (progn
+             (insert "{%  %}")
+             (backward-char 3)))))
 
 (defun insert-echo (arg)
   (interactive "p")

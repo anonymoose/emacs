@@ -38,8 +38,8 @@
       mac-command-modifier 'meta
       mac-option-modifier 'none)
 
-(setq system-uses-terminfo nil)    ; http://stackoverflow.com/a/8920373
-(setq explicit-shell-file-name "/bin/zsh")
+;; (setq system-uses-terminfo nil)    ; http://stackoverflow.com/a/8920373
+;; (setq explicit-shell-file-name "/bin/zsh")
 
 ;; key remapping
 ;;(global-set-key "\C-xk"             'kill-this-buffer)
@@ -56,8 +56,8 @@
 (global-set-key (kbd "C-S-f")       'fixup-whitespace)
 ;;(global-set-key "\C-xp"             'insert-printr)
 (global-set-key "\C-xp"             'insert-pdb)
-(global-set-key "\C-xI"             'insert-html-var)
-(global-set-key "\C-xJ"             'insert-html-func)
+(global-set-key "\C-xI"             'insert-interpolate-var)
+(global-set-key "\C-xJ"             'insert-interpolate-func)
 (global-set-key "\C-xO"             'other-frame)
 (global-set-key "\C-z"              'other-frame)
 (global-set-key "\C-x\C-z"          'other-frame)
